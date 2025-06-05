@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DLASS - Productos</title>
+  <meta name="description" content="Descubrí todos los productos DLASS: gorros, gorras y más con estilo urbano." />
+  <meta name="author" content="DLASS" />
+
+  <link rel="icon" href="imagenes/logo.jpg" type="image/png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="css/main.css" />
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Navbar toggler custom white */
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .navbar-toggler {
+      border-color: #ffffff;
+    }
+
+    /* Card styling */
+    .card {
+      background-color: #111;
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 10px 20px rgba(255,255,255,0.15);
+    }
+
+    /* Button styling */
+    .btn-outline-light {
+      transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
+      font-weight: 600;
+      border-radius: 50px;
+    }
+
+    .btn-outline-light:hover {
+      transform: scale(1.05);
+      background-color: #0c0c0c;
+      color: #0dcaf0; /* Bootstrap cyan for accent */
+      border-color: #0dcaf0;
+    }
+
+    /* Titles & text */
+    .card-title {
+      font-weight: 700;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 1.4rem;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #ccc;
+      flex-grow: 1;
+    }
+
+    /* Footer link hover */
+    footer a:hover {
+      text-decoration: underline;
+      color: #0dcaf0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar navbar-expand-lg sticky-top bg-dark" role="banner">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fs-3 text-white" href="index.html#hero" aria-label="Ir a la página principal DLASS">
+        <img src="imagenes/logo.jpg" alt="Logo DLASS" width="40" height="40" class="me-2 rounded-circle" />
+        DLASS
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación principal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navbarNav" role="navigation" aria-label="Menú principal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link text-white" aria-label="Ir a Inicio">Inicio</a></li>
+          <li class="nav-item"><a href="productos.html" class="nav-link active text-white fw-bold" aria-current="page" aria-label="Página actual Productos">Productos</a></li>
+          <li class="nav-item"><a href="colecciones.html" class="nav-link text-white" aria-label="Ir a Colecciones">Colecciones</a></li>
+          <li class="nav-item"><a href="nosotros.html" class="nav-link text-white" aria-label="Ir a Nosotros">Nosotros</a></li>
+          <li class="nav-item"><a href="contacto.html" class="nav-link text-white" aria-label="Ir a Contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="py-5" role="main">
+    <div class="container">
+      <h1 class="text-center mb-5 animate__animated animate__fadeInDown">Nuestros Productos</h1>
+      <div class="row g-4">
+
+        <article class="col-sm-6 col-md-4" role="article" aria-label="Producto Gorro clásico beige">
+          <div class="card h-100 shadow-lg animate__animated animate__fadeInUp">
+            <img src="https://th.bing.com/th/id/OIP.negv4mFR8gDqyFnsvrxGigHaJk?cb=iwc2&rs=1&pid=ImgDetMain" class="card-img-top" alt="Gorro clásico beige de alta calidad" />
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title">Gorro clásico beige</h2>
+              <p class="card-text">Hecho con los mejores materiales, suave y calentito.</p>
+              <a href="#" class="btn btn-outline-light mt-auto" aria-label="Comprar Gorro clásico beige">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-6 col-md-4" role="article" aria-label="Producto Gorro urbano negro">
+          <div class="card h-100 shadow-lg animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+            <img src="https://th.bing.com/th/id/OIP.nz1UahQ5l4zQjzLeaTbKHwHaHa?cb=iwc2&rs=1&pid=ImgDetMain" class="card-img-top" alt="Gorro urbano negro para look moderno" />
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title">Gorro urbano negro</h2>
+              <p class="card-text">Perfecto para un look moderno y casual.</p>
+              <a href="#" class="btn btn-outline-light mt-auto" aria-label="Comprar Gorro urbano negro">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-6 col-md-4" role="article" aria-label="Producto Gorro multicolor artesanal">
+          <div class="card h-100 shadow-lg animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+            <img src="https://th.bing.com/th/id/OIP.OY2q5EuVIuXu5dor8TlNNgHaHa?cb=iwc2&pid=ImgDet&w=474&h=474&rs=1" class="card-img-top" alt="Gorro de lana multicolor hecho a mano" />
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title">Gorro multicolor artesanal</h2>
+              <p class="card-text">Hecho a mano, cálido y con diseño único.</p>
+              <a href="#" class="btn btn-outline-light mt-auto" aria-label="Comprar Gorro multicolor artesanal">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-6 col-md-4" role="article" aria-label="Producto Gorra Trucker Roja">
+          <div class="card h-100 shadow-lg animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+            <img src="https://www.neweracap.eu/cdn/shop/files/60667460_2.jpg?v=1747779734" class="card-img-top" alt="Gorra Trucker Roja con ajuste trasero" />
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title">Gorra Trucker Roja</h2>
+              <p class="card-text">Diseño clásico con ajuste trasero. ¡Oferta especial!</p>
+              <a href="#" class="btn btn-outline-light mt-auto" aria-label="Comprar Gorra Trucker Roja">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-6 col-md-4" role="article" aria-label="Producto Gorra Urbana Negra">
+          <div class="card h-100 shadow-lg animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+            <img src="https://elenexperu.com/wp-content/uploads/2023/04/Black-Up-2.jpg" class="card-img-top" alt="Gorra Urbana Negra con visera curva" />
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title">Gorra Urbana Negra</h2>
+              <p class="card-text">Estilo moderno con visera curva. 20% OFF por tiempo limitado.</p>
+              <a href="#" class="btn btn-outline-light mt-auto" aria-label="Comprar Gorra Urbana Negra">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-light py-4 mt-5" role="contentinfo">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2022 DLASS. Todos los derechos reservados.</p>
+      <p class="mb-2">
+        📧 <a href="mailto:info@dlass.com" class="text-decoration-none text-light" aria-label="Enviar correo a info@dlass.com">info@dlass.com</a> |
+        📞 <a href="tel:+54912345678" class="text-decoration-none text-light" aria-label="Llamar al +54 9 1234 5678">+54 9 1234 5678</a>
+      </p>
+      <div>
+        <a href="#" class="text-light mx-2 text-decoration-none" aria-label="Visitar Instagram de DLASS">Instagram</a>
+        <a href="#" class="text-light mx-2 text-decoration-none" aria-label="Visitar Facebook de DLASS">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
